@@ -7,6 +7,7 @@ with open(fn2,'r') as csvfile:
     csvdata = csv.reader(csvfile)
     list_csv = list(csvdata)
 
+
 # 將 csv台灣人口匯入sqlite
 # 連接people.sqlite 資料庫
 conn = sqlite3.connect('people_eletrice.sqlite')
