@@ -4,9 +4,6 @@ import sqlite3
 fn = '台灣電力公司_各縣市住宅、服務業及機關用電統計資料.json'
 with open(fn,'r',encoding = 'utf-8') as file:
     jsdata = json.load(file)
-# for i in range(2277):
-#     data = jsdata[i]
-#     print(data['日期'],data['縣市'],data['住宅部門售電量(度)'])
 # 將 json 台灣電力公司匯入sqlite
 # 連接 electric.sqlite 資料庫
 conn = sqlite3.connect('people_eletrice.sqlite')
